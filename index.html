@@ -6,14 +6,15 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header id="title">
+<body id="homepage">
+    <header class="title">
         <h1>Quiz-App</h1>
         <p>Teste dein Wissen!</p>
     </header>
 
     <main>
         <div class="question-card">
+            <div class="bookmark">☑️</div>
             <div class="question-text">
                 <h2>Lorem ipsum dolor sit?</h2>
                 <button class="button">Show Answer</button>
@@ -26,6 +27,7 @@
         </div>
 
         <div class="question-card">
+            <div class="bookmark">✅</div>
             <div class="question-text">
                 <h2>Lorem ipsum dolor sit?</h2>
                 <button class="button">Show Answer</button>
@@ -38,6 +40,7 @@
         </div>
 
         <div class="question-card">
+            <div class="bookmark">☑️</div>
             <div class="question-text">
                 <h2>Lorem ipsum dolor sit?</h2>
                 <button class="button">Show Answer</button>
@@ -49,7 +52,11 @@
             </div>
         </div>
     </main>
-
+    <footer class="navbar">
+        <a href="#homepage" class="nav active">☑️</a>
+        <a href="#" class="nav">✅</a>
+        <a href="#" class="nav">👤</a>
+    </footer>
     
 </body>
 </html>
