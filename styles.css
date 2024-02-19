@@ -90,6 +90,8 @@
     padding: 5px 10px;
     width: 33%;
     justify-content: center;
+    text-decoration: none;
+    color: black;
 }
 
 .navbar a.active {
