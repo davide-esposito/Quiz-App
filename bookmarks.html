@@ -10,10 +10,11 @@
     <header class="title">
         <h1>Quiz-App</h1>
     </header>
+
     <main>
-        <div aria-label="Bookmark this question" class="question-card">
+        <article aria-label="Bookmark this question" class="question-card">
             <button class="bookmark">✅</button>
-            <div class="question-text">
+            <div>
                 <h2>Lorem ipsum dolor sit?</h2>
                 <button aria-label="Show answer of Question"class="button">Show Answer</button>
             </div>
@@ -22,10 +23,11 @@
                 <span class="tag">#flexbox</span>
                 <span class="tag">#css</span>
             </div>
-        </div>
-        <div aria-label="Bookmark this question" class="question-card">
+        </article>
+
+        <article aria-label="Bookmark this question" class="question-card">
             <button class="bookmark">✅</button>
-            <div class="question-text">
+            <div>
                 <h2>Lorem ipsum dolor sit?</h2>
                 <button aria-label="Show answer of Question" class="button">Show Answer</button>
             </div>
@@ -34,10 +36,11 @@
                 <span class="tag">#flexbox</span>
                 <span class="tag">#css</span>
             </div>
-        </div>
-        <div class="question-card">
+        </article>
+
+        <article class="question-card">
             <button aria-label="Bookmark this question" class="bookmark">✅</button>
-            <div class="question-text">
+            <div>
                 <h2>Lorem ipsum dolor sit?</h2>
                 <button aria-label="Show answer of Question" class="button">Show Answer</button>
             </div>
@@ -46,12 +49,16 @@
                 <span class="tag">#flexbox</span>
                 <span class="tag">#css</span>
             </div>
-        </div>
+        </article>
+
+        <button aria-label="back-to-top" class="back-to-top">🔝</button>
+
     </main>
+
     <footer class="navbar">
-        <a href="index.html" class="nav">Home ☑️</a>
-        <a href="bookmarks.html" class="nav active">Bookmarks ✅</a>
-        <a href="#" class="nav">Profile 👤</a>
+        <a href="index.html" class="nav" aria-label="Home">Home ☑️</a>
+        <a href="bookmarks.html" class="nav active" aria-label="Bookmarks">Bookmarks ✅</a>
+        <a href="#" class="nav" aria-label="Profile">Profile 👤</a>
     </footer>
 </body>
 </html>

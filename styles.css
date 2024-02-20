@@ -39,7 +39,7 @@ main{
     
 }
 
-.question-text{
+main > article > div{
     text-align: center;
 }
 
@@ -99,8 +99,8 @@ main{
     line-height: 30px;
 }
 
-#back-to-top:hover {
-    background-color: #555;
+.back-to-top:hover {
+    background-color: #45a049;
 }
 
 
