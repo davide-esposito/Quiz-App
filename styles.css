@@ -13,11 +13,11 @@
     color: #4CAF50;
 }
 
-.title p {
+/* .title p {
     font-size: 24px;
     color: #555;
     margin-top: 10px;
-}
+} */
 
 /* Main-Bereich */
 
@@ -110,6 +110,37 @@ main > section > article > div{
     background-color: #45a049;
 }
 
+/* Profil-Page */
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.profileNameAndImage{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.profileNameAndImage img{
+    height: 300px;
+}
+
+.counters{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.counter{
+    border: 2px solid orange;
+    border-radius: 5px;
+    width: 25%;
+}
 
 /* Footer-Bereich */
 
