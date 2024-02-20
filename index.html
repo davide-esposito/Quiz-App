@@ -14,10 +14,10 @@
 
     <main>
         <div class="question-card">
-            <div class="bookmark">☑️</div>
+            <button aria-label="Bookmark this question" class="bookmark">☑️</button>
             <div class="question-text">
                 <h2>Lorem ipsum dolor sit?</h2>
-                <button class="button">Show Answer</button>
+                <button aria-label="Show answer of Question" class="button">Show Answer</button>
             </div>
             <div class="tags">
                 <span class="tag">#html</span>
@@ -27,10 +27,10 @@
         </div>
 
         <div class="question-card">
-            <div class="bookmark">✅</div>
+            <button aria-label="Bookmark this question" class="bookmark">✅</button>
             <div class="question-text">
                 <h2>Lorem ipsum dolor sit?</h2>
-                <button class="button">Show Answer</button>
+                <button aria-label="Show answer of Question" class="button">Show Answer</button>
             </div>
             <div class="tags">
                 <span class="tag">#html</span>
@@ -40,10 +40,10 @@
         </div>
 
         <div class="question-card">
-            <div class="bookmark">☑️</div>
+            <button aria-label="Bookmark this question" class="bookmark">☑️</button>
             <div class="question-text">
                 <h2>Lorem ipsum dolor sit?</h2>
-                <button class="button">Show Answer</button>
+                <button aria-label="Show answer of Question" class="button">Show Answer</button>
             </div>
             <div class="tags">
                 <span class="tag">#html</span>
@@ -51,11 +51,14 @@
                 <span class="tag">#css</span>
             </div>
         </div>
+        
+        <button aria-label="back-to-top" class="back-to-top">🔝</button>
+
     </main>
     <footer class="navbar">
-        <a href="index.html" class="nav active">Home ☑️</a>
-        <a href="bookmarks.html" class="nav">Bookmarks ✅</a>
-        <a href="#" class="nav">Profile 👤</a>
+        <a href="index.html" class="nav active" aria-label="Home">Home ☑️</a>
+        <a href="bookmarks.html" class="nav" aria-label="Bookmarks">Bookmarks ✅</a>
+        <a href="#" class="nav" aria-label="Profile">Profile 👤</a>
     </footer>
     
 </body>
