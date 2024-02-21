@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./index.js" defer></script>
 </head>
 <body id="homepage">
 
@@ -13,10 +14,10 @@
         <h2>Test your knowledge!</h2>
     </header>
 
-    <main>
+    <main data-js="main">
         <section>
             <article class="question-card">
-                <button aria-label="Bookmark this question" class="bookmark">☑️</button>
+                <button aria-label="Bookmark this question" class="bookmark" data-js="bookmarkBtn">☑️</button>
                 <div>
                     <h2>Lorem ipsum dolor sit?</h2>
                     <button aria-label="Show answer of Question" class="button">Show Answer</button>
