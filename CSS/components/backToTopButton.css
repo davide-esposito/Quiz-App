@@ -1,17 +1,18 @@
 .back-to-top {
     position: fixed;
-    bottom: 70px;
-    left: 20px;
+    bottom: 4.375rem;
+    left: var(--spacing-large);
     z-index: 1; 
-    font-size: 24px;
-    background-color: #ffa500;
+    font-size: var(--font-size-medium);
+    background-color: var(--color-orange);
     border: none;
-    padding: 10px;
+    padding: var(--spacing-medium);
     border-radius: 50%;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-    line-height: 30px;
+    width: 3.125rem;
+    height: 3.125rem;
+    line-height: 1.875rem;
+    box-shadow: var(--box-shadow);
 }
 
 .back-to-top:hover {

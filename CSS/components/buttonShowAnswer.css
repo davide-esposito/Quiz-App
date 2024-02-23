@@ -1,11 +1,11 @@
 .button {
     background-color: var(--color-green);
     color: white;
-    margin-top: var(--margins-20px);
-    padding: 10px 20px;
-    border-radius: 5px;
+    margin-top: var(--spacing-large);
+    padding: .625rem 1.25rem;
+    border-radius: var(--border-radius-medium);
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--font-size-small);
 }
 
 .button:hover {

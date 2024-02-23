@@ -6,99 +6,30 @@
 /* Header-Bereich */
 
 .title {
-    background-color: #fef6e5;
-    padding: 20px;
+    background-color: var(--background-footer-tag-header);
+    padding: var(--spacing-large);
     text-align: center;
-    border-radius: 10px;
+    border-radius: var(--border-radius-medium);
     box-shadow: var(--box-shadow);
 }
 
 .title h1 {
-    font-size: 48px;
+    font-size: var(--font-size-large);
     color: var(--color-green);
 }
 
 /* Main-Bereich */
-
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 
-main > section{
+main > section {
     display: flex;
     width: 100%;
     justify-content: center;
-}
-
-/* Profil-Page */
-
-.profile-info{
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-}
-
-.profileNameAndImage{
-    display: flex;
-    justify-content: space-around;
-    margin-top: var(--margins-20px);
-    align-items: center;
-}
-
-.profileNameAndImage img{
-    height: 400px;
-    width: 350px;
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
-}
-
-.username{
-    font-size: 40px;
-    color: var(--color-orange);
-}
-
-.about-me{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-me h2{
-    color: var(--color-orange);
-    font-size: 32px;
-    align-self: baseline;
-    padding-left: 12%;
-}
-
-.about-me p{
-    font-size: 24px;
-    width: 75%;
-}
-
-.counters{
-    display: flex;
-    gap: 20px;
-    margin: var(--margins-20px);
-    justify-content: center;
-}
-
-.counter{
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    width: 20%;
-    border: 2px solid var(--color-orange);
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: var(--box-shadow);
-}
-
-.counters > div > p{
-    font-size: 20px;
 }
 
 /* Footer-Bereich */
@@ -107,8 +38,8 @@ main > section{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--footer-tag-header-background-color);
-    padding: 10px;
+    background-color: var(--background-footer-tag-header);
+    padding: var(--spacing-medium);
     display: flex;
     justify-content: space-around;
     box-shadow: var(--box-shadow);
@@ -116,15 +47,83 @@ main > section{
 
 .nav {
     display: flex;
-    padding: 5px 10px;
+    padding: var(--spacing-small) var(--spacing-medium);
     width: 33%;
     justify-content: center;
     text-decoration: none;
     color: black;
-    font-size: 21px;
+    font-size: var(--font-size-small);
 }
 
 .navbar a.active {
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
+}
+
+/* Profil-Page */
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.profileNameAndImage {
+    display: flex;
+    justify-content: space-around;
+    margin-top: var(--spacing-large);
+    align-items: center;
+}
+
+.profileNameAndImage img {
+    height: 400px;
+    width: 350px;
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--box-shadow);
+}
+
+.username {
+    font-size: var(--font-size-large);
+    color: var(--color-orange);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me h2 {
+    color: var(--color-orange);
+    font-size: var(--font-size-medium);
+    align-self: baseline;
+    padding-left: 12%;
+}
+
+.about-me p {
+    font-size: var(--font-size-small);
+    width: 75%;
+}
+
+.counters {
+    display: flex;
+    gap: var(--spacing-medium);
+    margin: var(--margins-20px);
+    justify-content: center;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    gap: var(--spacing-medium);
+    width: 20%;
+    border: 2px solid var(--color-orange);
+    border-radius: var(--border-radius-medium);
+    padding: var(--spacing-medium);
+    box-shadow: var(--box-shadow);
+}
+
+.counters > div > p {
+    font-size: var(--font-size-small);
 }
