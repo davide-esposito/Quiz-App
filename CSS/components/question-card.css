@@ -1,8 +1,8 @@
 .question-card {
     background-color: rgb(249, 249, 249);
-    padding: 20px;
-    margin: var(--margins-20px);
-    border-radius: 10px;
+    padding: var(--spacing-large);
+    margin: var(--spacing-large);
+    border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow);
     position: relative;
     width: 75%;
@@ -14,28 +14,28 @@ main > section > article > div{
 
 
 .question-card h2 {
-    font-size: 32px;
+    font-size: var(--font-size-large);
     font-weight: bold;
-    margin-bottom: var(--margins-20px);
+    margin-bottom: var(--spacing-large);
 }
 
 .tags{
     display: flex;
-    gap: 5px;
+    gap: var(--spacing-small);
 }
 
 .tag{
     border: 2px solid rgb(187, 185, 185);
-    padding: 5px 10px;
-    background-color: var(--footer-tag-header-background-color);
+    padding: .3125rem .625rem;
+    background-color: var(--background-footer-tag-header);
 }
 
 .bookmark {
-    font-size: 1.5rem;
+    font-size: var(--font-size-medium);
     border: none;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: var(--spacing-medium);
+    right: var(--spacing-medium);
     cursor: pointer;
     background-color: transparent;
 }
