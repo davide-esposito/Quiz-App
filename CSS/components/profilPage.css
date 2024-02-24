@@ -1,0 +1,71 @@
+/* Profil-Page */
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.profileNameAndImage {
+    display: flex;
+    justify-content: space-around;
+    margin-top: var(--spacing-large);
+    align-items: center;
+}
+
+.profileNameAndImage img {
+    height: 400px;
+    width: 350px;
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--box-shadow);
+}
+
+.username {
+    font-size: var(--font-size-large);
+    color: var(--color-orange);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-footer-tag-header);
+    border-radius: var(--border-radius-large);
+    margin-top: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+}
+
+.about-me h2 {
+    color: var(--color-orange);
+    font-size: var(--font-size-medium);
+    align-self: baseline;
+    padding-left: 12%;
+}
+
+.about-me p {
+    font-size: var(--font-size-small);
+    width: 75%;
+}
+
+.counters {
+    display: flex;
+    gap: var(--spacing-medium);
+    margin: var(--margins-20px);
+    justify-content: center;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    gap: var(--spacing-medium);
+    width: 20%;
+    border: 2px solid var(--color-orange);
+    border-radius: var(--border-radius-medium);
+    padding: var(--spacing-medium);
+    box-shadow: var(--box-shadow);
+}
+
+.counters > div > p {
+    font-size: var(--font-size-small);
+}

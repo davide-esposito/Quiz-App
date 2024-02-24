@@ -10,6 +10,13 @@ bookmarkBtns.forEach(btn => {
     });
 });
 
+
+// Dark-Mode
+document.querySelector('[data-js="dark-button"]').addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+});
+
+
 // Back-to-Top-Button
 const backToTopBtn = document.querySelector(".back-to-top");
 

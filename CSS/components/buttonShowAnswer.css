@@ -6,8 +6,10 @@
     border-radius: var(--border-radius-medium);
     cursor: pointer;
     font-size: var(--font-size-small);
+    transition: transform 0.3s;
 }
 
 .button:hover {
     background-color: var(--color-orange);
+    transform: scale(0.9);
 }
