@@ -56,8 +56,16 @@ main > section {
 }
 
 .navbar a.active {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--color-orange);
     border-radius: var(--border-radius-small);
+    font-weight: bold;
+    border-radius: var(--border-radius-large);
+}
+
+.nav:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+    text-decoration: underline; 
+    border-radius: var(--border-radius-large);
 }
 
 /* Profil-Page */
