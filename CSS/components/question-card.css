@@ -1,5 +1,5 @@
 .question-card {
-    background-color: rgb(249, 249, 249);
+    background-color: var(--background-footer-tag-header);
     padding: var(--spacing-large);
     margin: var(--spacing-large);
     border-radius: var(--border-radius-large);

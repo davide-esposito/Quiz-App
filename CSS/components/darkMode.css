@@ -1,0 +1,79 @@
+/* Dark Mode Styles */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Header */
+.dark-theme .title{
+    background-color: #333333
+}
+
+.dark-theme .title h1{
+    color: var(--color-green);
+}
+.dark-theme .title h2 {
+    color: #ffffff;
+}
+
+/* Profil-Page */
+.dark-theme .profileNameAndImage img {
+    border: 2px solid #ffffff;
+}
+
+.dark-theme .about-me p{
+    color: black;
+}
+
+/* Footer */
+.dark-theme .navbar {
+    background-color: #333333;
+}
+
+.dark-theme .navbar a {
+    color: #ffffff;
+}
+
+.dark-theme .navbar a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Question Cards */
+.dark-theme .question-card {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.dark-theme .question-card h2 {
+    color: #ffffff;
+}
+
+.dark-theme .tag {
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode Button Styles */
+[data-js="dark-button"] {
+    position: fixed;
+    top: .4125rem;
+    right: .4125rem;
+    padding: .3125rem .625rem;
+    border: none;
+    border-radius: var(--border-radius-large);
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: black;
+    background: linear-gradient(145deg, #808080, #ffffff);
+    cursor: pointer;
+}
+
+[data-js="dark-button"]:hover {
+    background: linear-gradient(145deg, #a0a0a0, #ffffff);
+}
+
+[data-js="dark-button"]:active {
+    background: linear-gradient(145deg, #c0c0c0, #ffffff);
+}
