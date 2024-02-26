@@ -7,7 +7,9 @@
 
 
 /* Header-Bereich */
-
+body{
+    margin: 0;
+}
 .title {
     background-color: var(--background-footer-tag-header);
     padding: var(--spacing-large);
@@ -51,7 +53,6 @@ main > section {
 .nav {
     display: flex;
     padding: var(--spacing-small) var(--spacing-medium);
-    width: 33%;
     justify-content: center;
     text-decoration: none;
     color: black;
@@ -60,7 +61,6 @@ main > section {
 
 .navbar a.active {
     background-color: var(--color-orange);
-    border-radius: var(--border-radius-small);
     font-weight: bold;
     border-radius: var(--border-radius-large);
 }
@@ -70,3 +70,4 @@ main > section {
     text-decoration: underline; 
     border-radius: var(--border-radius-large);
 }
+
