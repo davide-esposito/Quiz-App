@@ -1,19 +1,28 @@
 /* Dark Mode Styles */
-.dark-theme {
-    background-color: #121212;
-    color: #ffffff;
+
+/* Dark-Mode */
+[data-theme="dark-theme"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --secondary-background-color: #333333; 
+    --primary-color: #90CAF9;
+}
+
+.dark-theme main{
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Header */
 .dark-theme .title{
-    background-color: #333333
+    background-color: var(--secondary-background-color);
 }
 
 .dark-theme .title h1{
     color: var(--color-green);
 }
 .dark-theme .title h2 {
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 /* Profil-Page */
@@ -27,11 +36,11 @@
 
 /* Footer */
 .dark-theme .navbar {
-    background-color: #333333;
+    background-color: var(--secondary-background-color);
 }
 
 .dark-theme .navbar a {
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .dark-theme .navbar a.active {
@@ -40,14 +49,14 @@
 
 /* Question Cards */
 .dark-theme .question-card {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
 }
 
 .dark-theme .question-card h2 {
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .dark-theme .tag {
