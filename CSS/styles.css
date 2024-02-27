@@ -5,6 +5,106 @@
 @import url(./components/darkMode.css);
 @import url(./components/profilPage.css);
 
+/* Media-Queries */
+
+@media (min-width: 320px) {
+  .button {
+    margin-bottom: var(--spacing-large);
+  }
+
+  main {
+    margin-bottom: var(--spacing-large);
+  }
+
+  a.nav {
+    font-size: 0.9rem;
+  }
+
+  .back-to-top {
+    left: 0.0625rem;
+    bottom: 6rem;
+    font-size: var(--font-size-small);
+    padding: var(--spacing-small);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  /* profil-page */
+
+  .profile-info {
+    width: 80%;
+  }
+
+  .profileNameAndImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: var(--spacing-large);
+  }
+
+  .counter {
+    display: inline-block;
+    width: 80%;
+  }
+
+  .counter h3 {
+    margin: 0;
+  }
+
+  .counter p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  a.nav {
+    font-size: var(--font-size-small);
+  }
+
+  .back-to-top {
+    width: 3.125rem;
+    height: 3.125rem;
+    bottom: 4.375rem;
+    left: var(--spacing-large);
+  }
+
+  .tags {
+    justify-content: left;
+  }
+
+  /* profil-page */
+
+  .profileNameAndImage {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-large);
+    justify-content: center;
+    width: 100%;
+    margin-top: var(--spacing-large);
+  }
+
+  .profileNameAndImage img {
+    height: 25rem;
+    width: 21.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .profileNameAndImage img {
+    height: 25rem;
+    width: 21.875rem;
+  }
+
+  .counter {
+    width: 30%;
+  }
+}
 
 body{
     margin: 0;
