@@ -1,3 +1,14 @@
+
+/* Dark Mode Styles */
+
+/* Dark-Mode */
+[data-theme="dark-theme"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --secondary-background-color: #333333; 
+    --primary-color: #90CAF9;
+}
+
 /* Dark-Mode */
 
 [data-theme="dark"] {
@@ -7,13 +18,18 @@
 }
 
 .dark-theme {
+
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
 /* Header */
 .dark-theme .title{
+
+    background-color: var(--secondary-background-color);
+
     background-color: var(--secondary-background-color)
+
 }
 
 .dark-theme .title h1{

@@ -6,6 +6,10 @@
 @import url(./components/profilPage.css);
 
 
+body{
+    margin: 0;
+}
+
 /* Header-Bereich */
 body{
     margin: 0;
@@ -41,6 +45,8 @@ main > section {
 /* Footer-Bereich */
 
 .navbar {
+    padding: 0;
+    margin: 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -73,4 +79,5 @@ main > section {
     text-decoration: underline; 
     border-radius: var(--border-radius-large);
 }
+
 
