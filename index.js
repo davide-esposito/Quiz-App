@@ -4,11 +4,6 @@ const bookmarkBtns = document.querySelectorAll(`.bookmark`);
 bookmarkBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         const icon = btn.querySelector("i");
-        if (icon.classList.contains("far")) {
-            icon.classList.add("orange-icon");
-        } else {
-            icon.classList.remove("orange-icon");
-        }
         icon.classList.toggle("far");
         icon.classList.toggle("fas");
     });

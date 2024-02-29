@@ -30,7 +30,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-footer-tag-header);
+    background-color: var(--background-color-light);
+    color: black;
     border-radius: var(--border-radius-large);
     margin-top: var(--spacing-large);
     margin-bottom: var(--spacing-large);

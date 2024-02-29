@@ -1,5 +1,5 @@
 .question-card {
-    background-color: var(--background-footer-tag-header);
+    background-color: var(--background-color-light);
     padding: var(--spacing-large);
     margin: var(--spacing-large);
     border-radius: var(--border-radius-large);
@@ -27,7 +27,8 @@ main > section > article > div{
 .tag{
     border: 2px solid rgb(187, 185, 185);
     padding: .3125rem .625rem;
-    background-color: var(--background-footer-tag-header);
+    background-color: var(--background-color-light);
+    color: black;
 }
 
 .bookmark {
@@ -39,12 +40,9 @@ main > section > article > div{
     cursor: pointer;
     background-color: transparent;
     transition: transform 0.3s;
+    color: orange;
 }
 
 .bookmark:hover{
     transform: scale(1.2);
-}
-
-.orange-icon{
-    color: var(--color-orange);
 }

@@ -108,15 +108,19 @@
 
 body{
     margin: 0;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+  color: black;
 }
 
 /* Header-Bereich */
-body{
-    margin: 0;
-    padding: 0;
-}
+
 .title {
-    background-color: var(--background-footer-tag-header);
+    background-color: var(--background-color-light);
     padding: var(--spacing-large);
     text-align: center;
     border-radius: var(--border-radius-medium);
@@ -150,7 +154,7 @@ main > section {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--background-footer-tag-header);
+    background-color: var(--background-color-light);
     padding: var(--spacing-medium);
     display: flex;
     justify-content: center;
@@ -162,10 +166,15 @@ main > section {
     display: flex;
     padding: var(--spacing-small) var(--spacing-medium);
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: black;
     font-size: var(--font-size-small);
     width: 30%;
+}
+
+footer > nav > a > i{
+  margin: 0 var(--spacing-small);
 }
 
 .navbar a.active {

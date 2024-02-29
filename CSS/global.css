@@ -4,7 +4,10 @@
     --box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     --color-green: #4F8C53;
     --color-orange: #ff9c45;
-    --background-footer-tag-header: #F2EEEB;
+    --background-color-light: #F2EEEB;
+    --font-primary: 'Open Sans', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
 
     --font-size-large: 2rem; /* 32px in rem */
     --font-size-medium: 1.5rem; /* 24px in rem */
@@ -18,3 +21,6 @@
     --border-radius-medium: 0.3125rem; /* 5px in rem */
 }
 
+* {
+    box-sizing: border-box;
+}
