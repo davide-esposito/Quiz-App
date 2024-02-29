@@ -5,19 +5,94 @@
 @import url(./components/darkMode.css);
 @import url(./components/profilPage.css);
 
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+/* Header-Bereich */
+
+.title {
+  background-color: var(--background-color-light);
+  padding: var(--spacing-large);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.title h1 {
+  color: var(--color-green);
+}
+
+/* Main-Bereich */
+main {
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  padding-bottom: 3.125rem;
+}
+
+main > section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Footer-Bereich */
+
+.navbar {
+  /* padding: 0;
+    margin: 0; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--background-color-light);
+  padding: var(--spacing-medium);
+  display: flex;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  /* margin: 0; */
+}
+
+.nav {
+  display: flex;
+  padding: var(--spacing-small) var(--spacing-medium);
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: var(--font-size-small);
+  width: 30%;
+}
+
+footer > nav > a > i {
+  margin: 0 var(--spacing-small);
+}
+
+.navbar a.active {
+  background-color: var(--color-orange);
+  font-weight: bold;
+  border-radius: var(--border-radius-large);
+}
+
+.nav:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
+  border-radius: var(--border-radius-large);
+}
+
 /* Media-Queries */
 
-@media (min-width: 320px) {
+@media (max-width: 600px) {
+  [data-js="dark-button"] {
+    z-index: 1;
+  }
+
   .button {
     margin-bottom: var(--spacing-large);
   }
 
-  main {
-    margin-bottom: var(--spacing-large);
-  }
-
   a.nav {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .back-to-top {
@@ -33,10 +108,8 @@
     justify-content: center;
   }
 
-  /* profil-page */
-
-  .profile-info {
-    width: 80%;
+  .navbar {
+    justify-content: space-around;
   }
 
   .profileNameAndImage {
@@ -45,6 +118,11 @@
     justify-content: center;
     width: 100%;
     margin-top: var(--spacing-large);
+  }
+
+  .profileNameAndImage img {
+    width: 12.5rem;
+    height: 12.5rem;
   }
 
   .counter {
@@ -62,7 +140,7 @@
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   a.nav {
     font-size: var(--font-size-small);
   }
@@ -95,7 +173,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .profileNameAndImage img {
     height: 25rem;
     width: 21.875rem;
@@ -104,87 +182,4 @@
   .counter {
     width: 30%;
   }
-}
-
-body{
-    margin: 0;
-    font-family: var(--font-primary);
-    color: var(--text-color);
-}
-
-h1, h2, h3 {
-  font-family: var(--font-secondary);
-  color: black;
-}
-
-/* Header-Bereich */
-
-.title {
-    background-color: var(--background-color-light);
-    padding: var(--spacing-large);
-    text-align: center;
-    border-radius: var(--border-radius-medium);
-    box-shadow: var(--box-shadow);
-}
-
-.title h1 {
-    font-size: var(--font-size-large);
-    color: var(--color-green);
-}
-
-/* Main-Bereich */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3.125rem;
-}
-
-main > section {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-/* Footer-Bereich */
-
-.navbar {
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--background-color-light);
-    padding: var(--spacing-medium);
-    display: flex;
-    justify-content: center;
-    box-shadow: var(--box-shadow);
-    margin: 0;
-}
-
-.nav {
-    display: flex;
-    padding: var(--spacing-small) var(--spacing-medium);
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    font-size: var(--font-size-small);
-    width: 30%;
-}
-
-footer > nav > a > i{
-  margin: 0 var(--spacing-small);
-}
-
-.navbar a.active {
-    background-color: var(--color-orange);
-    font-weight: bold;
-    border-radius: var(--border-radius-large);
-}
-
-.nav:hover {
-    background-color: rgba(0, 0, 0, 0.2); 
-    text-decoration: underline; 
-    border-radius: var(--border-radius-large);
 }

@@ -2,12 +2,11 @@
     background-color: var(--color-green);
     color: white;
     margin-top: var(--spacing-large);
-    padding: .625rem 1.25rem;
+    padding: var(--spacing-medium) var(--spacing-large);
     border-radius: var(--border-radius-medium);
     cursor: pointer;
     font-size: var(--font-size-small);
     transition: transform 0.3s;
-    font-family: var(--font-secondary);
 }
 
 .button:hover {
