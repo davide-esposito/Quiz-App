@@ -31,11 +31,20 @@ main > section > article > div{
 }
 
 .bookmark {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-large);
     border: none;
     position: absolute;
-    top: var(--spacing-medium);
-    right: var(--spacing-medium);
+    top: var(--spacing-large);
+    right: var(--spacing-large);
     cursor: pointer;
     background-color: transparent;
+    transition: transform 0.3s;
+}
+
+.bookmark:hover{
+    transform: scale(1.2);
+}
+
+.orange-icon{
+    color: var(--color-orange);
 }
