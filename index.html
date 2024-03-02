@@ -1,95 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <script src="./index.js" defer></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
 
-<body id="homepage" data-theme="dark">
-
-
+  <body id="homepage" data-theme="dark">
     <header class="title">
-        <h1>Quiz-App</h1>
-        <h2>Test your knowledge!</h2>
-        <button data-js="dark-button">Dark Mode</button>
+      <h1>Quiz-App</h1>
+      <h2>Test your knowledge!</h2>
+      <button data-js="dark-button">Dark Mode</button>
     </header>
 
     <main data-js="main">
-        <section>
-            <article class="question-card">
-                <button aria-label="Bookmark this question" class="bookmark " data-js="bookmarkBtn"><i class="far fa-bookmark"></i></button>
-                <div>
-                    <h2>Lorem ipsum dolor sit?</h2>
-                    <button aria-label="Show answer of Question" class="button">Show Answer</button>
-                </div>
-                <div class="tags">
-                    <span aria-label="tag" class="tag">#html</span>
-                    <span aria-label="tag" class="tag">#flexbox</span>
-                    <span aria-label="tag" class="tag">#css</span>
-                </div>
-            </article>
-        </section>
+      <section class="create-question-form">
+        <form id="newQuestionForm">
+          <label for="questionInput">Frage:</label>
+          <input type="text" id="questionInput" name="question" required />
 
-        <section>
-            <article class="question-card">
-                <button aria-label="Bookmark this question" class="bookmark"><i class="fas fa-bookmark"></i></button>
-                <div>
-                    <h2>Lorem ipsum dolor sit?</h2>
-                    <button aria-label="Show answer of Question" class="button">Show Answer</button>
-                </div>
-                <div class="tags">
-                    <span aria-label="tag" class="tag">#html</span>
-                    <span aria-label="tag" class="tag">#flexbox</span>
-                    <span aria-label="tag" class="tag">#css</span>
-                </div>
-            </article>
-        </section>
+          <label for="answerInput">Antwort:</label>
+          <input type="text" id="answerInput" name="answer" required />
 
-        <section>
-            <article class="question-card">
-                <button aria-label="Bookmark this question" class="bookmark"><i class="far fa-bookmark"></i></button>
-                <div>
-                    <h2>Lorem ipsum dolor sit?</h2>
-                    <button aria-label="Show answer of Question" class="button">Show Answer</button>
-                </div>
-                <div class="tags">
-                    <span aria-label="tag" class="tag">#html</span>
-                    <span aria-label="tag" class="tag">#flexbox</span>
-                    <span aria-label="tag" class="tag">#css</span>
-                </div>
-            </article>
-        </section>
+          <label for="tagsInput">Tags (durch Kommas getrennt):</label>
+          <input type="text" id="tagsInput" name="tags" required />
 
-        <section>
-            <article class="question-card">
-                <button aria-label="Bookmark this question" class="bookmark"><i class="far fa-bookmark"></i></button>
-                <div>
-                    <h2>Lorem ipsum dolor sit?</h2>
-                    <button aria-label="Show answer of Question" class="button">Show Answer</button>
-                </div>
-                <div class="tags">
-                    <span aria-label="tag" class="tag">#html</span>
-                    <span aria-label="tag" class="tag">#flexbox</span>
-                    <span aria-label="tag" class="tag">#css</span>
-                </div>
-            </article>
-        </section>
+          <button type="submit" class="button">Frage erstellen</button>
+        </form>
+      </section>
 
-        <button aria-label="back-to-top" class="back-to-top">🔝</button>
+      <section>
+        <article class="question-card">
+          <button
+            aria-label="Bookmark this question"
+            class="bookmark"
+            data-js="bookmarkBtn"
+          >
+            <i class="far fa-bookmark"></i>
+          </button>
+          <div>
+            <h2>Lorem ipsum dolor sit?</h2>
+            <button aria-label="Show answer of Question" class="button">
+              Show Answer
+            </button>
+          </div>
+          <div class="tags">
+            <span aria-label="tag" class="tag">#html</span>
+            <span aria-label="tag" class="tag">#flexbox</span>
+            <span aria-label="tag" class="tag">#css</span>
+          </div>
+        </article>
+      </section>
 
+      <section>
+        <article class="question-card">
+          <button aria-label="Bookmark this question" class="bookmark">
+            <i class="fas fa-bookmark"></i>
+          </button>
+          <div>
+            <h2>Lorem ipsum dolor sit?</h2>
+            <button aria-label="Show answer of Question" class="button">
+              Show Answer
+            </button>
+          </div>
+          <div class="tags">
+            <span aria-label="tag" class="tag">#html</span>
+            <span aria-label="tag" class="tag">#flexbox</span>
+            <span aria-label="tag" class="tag">#css</span>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <article class="question-card">
+          <button aria-label="Bookmark this question" class="bookmark">
+            <i class="far fa-bookmark"></i>
+          </button>
+          <div>
+            <h2>Lorem ipsum dolor sit?</h2>
+            <button aria-label="Show answer of Question" class="button">
+              Show Answer
+            </button>
+          </div>
+          <div class="tags">
+            <span aria-label="tag" class="tag">#html</span>
+            <span aria-label="tag" class="tag">#flexbox</span>
+            <span aria-label="tag" class="tag">#css</span>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <article class="question-card">
+          <button aria-label="Bookmark this question" class="bookmark">
+            <i class="far fa-bookmark"></i>
+          </button>
+          <div>
+            <h2>Lorem ipsum dolor sit?</h2>
+            <button aria-label="Show answer of Question" class="button">
+              Show Answer
+            </button>
+          </div>
+          <div class="tags">
+            <span aria-label="tag" class="tag">#html</span>
+            <span aria-label="tag" class="tag">#flexbox</span>
+            <span aria-label="tag" class="tag">#css</span>
+          </div>
+        </article>
+      </section>
+
+      <button aria-label="back-to-top" class="back-to-top">🔝</button>
     </main>
 
     <footer>
-        <nav class="navbar">
-            <a href="index.html" class="nav active" aria-label="Home">Home<i class="far fa-bookmark"></i></a>
-            <a href="bookmarks.html" class="nav" aria-label="Bookmarks">Bookmarks<i class="fas fa-bookmark"></i></a>
-            <a href="profile.html" class="nav" aria-label="Profile">Profile <i class="far fa-regular fa-user"></i></a>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html" class="nav active" aria-label="Home"
+          >Home<i class="far fa-bookmark"></i
+        ></a>
+        <a href="bookmarks.html" class="nav" aria-label="Bookmarks"
+          >Bookmarks<i class="fas fa-bookmark"></i
+        ></a>
+        <a href="profile.html" class="nav" aria-label="Profile"
+          >Profile <i class="far fa-regular fa-user"></i
+        ></a>
+      </nav>
     </footer>
-    
-</body>
+  </body>
 </html>
