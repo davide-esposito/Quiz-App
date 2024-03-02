@@ -28,7 +28,7 @@ main {
   /* display: flex;
     flex-direction: column;
     align-items: center; */
-  padding-bottom: 3.125rem;
+  margin-bottom: 3.125rem;
 }
 
 main > section {
@@ -83,16 +83,21 @@ footer > nav > a > i {
 /* Media-Queries */
 
 @media (max-width: 600px) {
-  [data-js="dark-button"] {
-    z-index: 1;
-  }
-
   .button {
     margin-bottom: var(--spacing-large);
   }
 
   a.nav {
     font-size: 0.8rem;
+  }
+
+  .question-card h2 {
+    font-size: var(--font-size-medium);
+  }
+
+  .bookmark {
+    right: 0;
+    top: 5px;
   }
 
   .back-to-top {
@@ -106,6 +111,7 @@ footer > nav > a > i {
 
   .tags {
     justify-content: center;
+    font-size: 0.875rem;
   }
 
   .navbar {
@@ -125,8 +131,12 @@ footer > nav > a > i {
     height: 12.5rem;
   }
 
+  .about-me {
+    margin: var(--spacing-large);
+  }
+
   .counter {
-    display: inline-block;
+    align-items: center;
     width: 80%;
   }
 
@@ -152,24 +162,25 @@ footer > nav > a > i {
     left: var(--spacing-large);
   }
 
+  .button{
+    margin-bottom: var(--spacing-medium);
+    margin-top: 0;
+  }
+
+  .bookmark {
+    right: var(--spacing-small);
+    top: var(--spacing-medium);
+  }
+
   .tags {
     justify-content: left;
   }
 
   /* profil-page */
 
-  .profileNameAndImage {
-    display: flex;
-    flex-direction: row;
-    gap: var(--spacing-large);
-    justify-content: center;
-    width: 100%;
-    margin-top: var(--spacing-large);
-  }
-
   .profileNameAndImage img {
-    height: 25rem;
-    width: 21.875rem;
+    height: 15.625rem;
+    width: 15.625rem;
   }
 }
 
