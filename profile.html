@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <script src="./index.js" defer></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <script src="./JS/index.js" defer></script>
+    <script src="./JS/form.js" defer></script>
+    <script src="./JS/darkMode.js" defer></script>
+    <script src="./JS/bookmark.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
 
-<body id="profil" data-theme="dark">
-
-
+  <body id="profil" data-theme="dark">
     <header class="title">
-        <h1>Quiz-App</h1>
-        <h2>Profile</h2>
-        <button data-js="dark-button">Dark Mode</button>
+      <h1>Quiz-App</h1>
+      <h2>Profile</h2>
+      <button data-js="dark-button">Dark Mode</button>
     </header>
 
     <main>
-        <section class="profile-info" aria-label="Profile-information">
-            <div class="profileNameAndImage">
-                <img src="./img/profilbild.jpg" alt="Profilimage" aria-label="Profileimage">
-                <h2 aria-label="username" class="username" >Username</h2>
-            </div>
-            <div aria-label="about me" class="about-me">
-                <h2>About me:</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime animi ducimus beatae fugit alias repellendus ea rem quos quibusdam nobis consequatur illum, voluptatem, minima tempora obcaecati facilis nostrum impedit accusantium.</p>
-            </div>
-            <div class="counters" aria-label="Counter">
-                <div class="counter">
-                    <h3>Created Questions:</h3>
-                    <p>0</p>
-                </div>
-                <div class="counter">
-                    <h3>Bookmarks:</h3>
-                    <p>0</p>
-                </div>
-            </div>
-        </section>
+      <section class="profile-info" aria-label="Profile-information">
+        <div class="profileNameAndImage">
+          <img
+            src="./img/profilbild.jpg"
+            alt="Profilimage"
+            aria-label="Profileimage"
+          />
+          <h2 aria-label="username" class="username">Username</h2>
+        </div>
+        <div aria-label="about me" class="about-me">
+          <h2>About me:</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            animi ducimus beatae fugit alias repellendus ea rem quos quibusdam
+            nobis consequatur illum, voluptatem, minima tempora obcaecati
+            facilis nostrum impedit accusantium.
+          </p>
+        </div>
+        <div class="counters" aria-label="Counter">
+          <div class="counter">
+            <h3>Created Questions:</h3>
+            <p>0</p>
+          </div>
+          <div class="counter">
+            <h3>Bookmarks:</h3>
+            <p>0</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <nav class="navbar">
-            <a href="index.html" class="nav" aria-label="Home">Home <i class="far fa-bookmark"></i></a>
-            <a href="bookmarks.html" class="nav" aria-label="Bookmarks">Bookmarks <i class="fas fa-bookmark"></i></a>
-            <a href="profile.html" class="nav active" aria-label="Profile">Profile <i class="far fa-regular fa-user"></i></a>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html" class="nav" aria-label="Home"
+          >Home <i class="far fa-bookmark"></i
+        ></a>
+        <a href="bookmarks.html" class="nav" aria-label="Bookmarks"
+          >Bookmarks <i class="fas fa-bookmark"></i
+        ></a>
+        <a href="form.html" class="nav" aria-label="Create question"
+          >New Question <i class="fa fa-question"></i
+        ></a>
+        <a href="profile.html" class="nav active" aria-label="Profile"
+          >Profile <i class="far fa-regular fa-user"></i
+        ></a>
+      </nav>
     </footer>
-
-</body>
+  </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <script src="./JS/index.js" defer></script>
+    <script src="./JS/form.js" defer></script>
+    <script src="./JS/darkMode.js" defer></script>
+    <script src="./JS/bookmark.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+  <body id="bookmark" data-theme="dark">
+    <header class="title">
+      <h1>Quiz-App</h1>
+      <h2>Create a new Question</h2>
+      <button data-js="dark-button">Dark Mode</button>
+    </header>
+
+    <main>
+      <section class="create-question-form">
+        <form id="newQuestionForm">
+          <label for="questionInput">Question:</label>
+          <input type="text" id="questionInput" name="question" required />
+
+          <label for="answerInput">Answer:</label>
+          <input type="text" id="answerInput" name="answer" required />
+
+          <label for="tagsInput">Tags (separated by commas):</label>
+          <input type="text" id="tagsInput" name="tags" required />
+
+          <button type="submit" class="button">Create question</button>
+        </form>
+      </section>
+
+      <footer>
+        <nav class="navbar">
+          <a href="index.html" class="nav active" aria-label="Home"
+            >Home<i class="far fa-bookmark"></i
+          ></a>
+          <a href="bookmarks.html" class="nav" aria-label="Bookmarks"
+            >Bookmarks<i class="fas fa-bookmark"></i
+          ></a>
+          <a href="form.html" class="nav" aria-label="Create question"
+            >New Question <i class="fa fa-question"></i
+          ></a>
+          <a href="profile.html" class="nav" aria-label="Profile"
+            >Profile <i class="far fa-regular fa-user"></i
+          ></a>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
