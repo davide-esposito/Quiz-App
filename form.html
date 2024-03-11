@@ -14,7 +14,7 @@
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
   </head>
-  <body id="bookmark" data-theme="dark">
+  <body id="form" data-theme="dark">
     <header class="title">
       <h1>Quiz-App</h1>
       <h2>Create a new Question</h2>
@@ -22,30 +22,30 @@
     </header>
 
     <main>
-      <section class="create-question-form">
-        <form id="newQuestionForm">
-          <label for="questionInput">Question:</label>
-          <input type="text" id="questionInput" name="question" required />
+        <section class="create-question-form">
+          <form id="newQuestionForm">
+            <label for="questionInput">Question:</label>
+            <textarea type="text" id="questionInput" name="question" required></textarea>
 
-          <label for="answerInput">Answer:</label>
-          <input type="text" id="answerInput" name="answer" required />
+            <label for="answerInput">Answer:</label>
+            <textarea type="text" id="answerInput" name="answer" required></textarea>
 
-          <label for="tagsInput">Tags (separated by commas):</label>
-          <input type="text" id="tagsInput" name="tags" required />
+            <label for="tagsInput">Tags (separated by commas):</label>
+            <input type="text" id="tagsInput" name="tags" required />
 
-          <button type="submit" class="button">Create question</button>
-        </form>
-      </section>
+            <button type="submit" class="button">Create question</button>
+          </form>
+        </section>
 
       <footer>
         <nav class="navbar">
-          <a href="index.html" class="nav active" aria-label="Home"
+          <a href="index.html" class="nav" aria-label="Home"
             >Home<i class="far fa-bookmark"></i
           ></a>
           <a href="bookmarks.html" class="nav" aria-label="Bookmarks"
             >Bookmarks<i class="fas fa-bookmark"></i
           ></a>
-          <a href="form.html" class="nav" aria-label="Create question"
+          <a href="form.html" class="nav active" aria-label="Create question"
             >New Question <i class="fa fa-question"></i
           ></a>
           <a href="profile.html" class="nav" aria-label="Profile"

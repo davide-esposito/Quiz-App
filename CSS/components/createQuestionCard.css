@@ -1,6 +1,6 @@
 .create-question-form {
   background-color: var(--background-color-light);
-  padding: 20px;
+  padding: var(--spacing-large);
   border-radius: var(--border-radius-large);
   box-shadow: var(--box-shadow);
   width: 70%;
@@ -13,24 +13,31 @@
 }
 
 .create-question-form label {
-  margin-bottom: 5px;
+  margin-bottom: var(--spacing-small);
   font-weight: bold;
 }
 
-.create-question-form input[type="text"] {
-  margin-bottom: 20px;
-  padding: 10px;
+.create-question-form textarea {
+  margin-bottom: var(--spacing-large);
+  padding: var(--spacing-medium);
   border-radius: var(--border-radius-medium);
   border: 1px solid #ccc;
+}
+
+.create-question-form input {
+
 }
 
 .create-question-form .button {
   background-color: var(--color-green);
   color: white;
-  padding: 10px;
+  padding: var(--spacing-medium);
+  margin: var(--spacing-medium);
   border: none;
   border-radius: var(--border-radius-medium);
   cursor: pointer;
+  box-shadow: var(--box-shadow);
+  font-size: var(--font-size-small);
 }
 
 .create-question-form .button:hover {
