@@ -1,4 +1,4 @@
-.button {
+.showAnswerBtn {
     background-color: var(--color-green);
     color: white;
     margin-top: var(--spacing-large);
@@ -9,7 +9,31 @@
     transition: transform 0.3s;
 }
 
-.button:hover {
+.showAnswerBtn:hover {
     background-color: var(--color-orange);
     transform: scale(0.9);
+}
+
+.hideAnswerBtn{
+    background-color: var(--color-orange);
+    color: white;
+    margin-top: var(--spacing-large);
+    padding: var(--spacing-medium) var(--spacing-large);
+    border-radius: var(--border-radius-medium);
+    cursor: pointer;
+    font-size: var(--font-size-small);
+    transition: transform 0.3s;
+}
+
+.hideAnswerBtn:hover {
+    background-color: var(--color-green);
+    transform: scale(0.9);
+}
+
+.hidden {
+    display: none;
+  }
+
+.answer{
+    font-size: var(--font-size-small);
 }

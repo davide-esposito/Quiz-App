@@ -9,6 +9,7 @@
     <script src="./JS/form.js" defer></script>
     <script src="./JS/darkMode.js" defer></script>
     <script src="./JS/bookmark.js" defer></script>
+    <script src="./JS/showAnswer.js" defer></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -25,18 +26,18 @@
     <main>
       <section>
         <article class="question-card">
-          <button
-            aria-label="Bookmark this question"
-            class="bookmark"
-            data-js="bookmarkBtn"
-          >
+          <button aria-label="Bookmark this question" class="bookmark">
             <i class="far fa-bookmark"></i>
           </button>
           <div>
-            <h2>Lorem ipsum dolor sit?</h2>
-            <button aria-label="Show answer of Question" class="button">
+            <h2>What does CSS stand for?</h2>
+            <button aria-label="Show answer of Question" class="showAnswerBtn">
               Show Answer
             </button>
+            <div class="answer hidden">
+              CSS stands for Cascading Style Sheets.
+            </div>
+            <button class="hideAnswerBtn hidden">Hide Answer</button>
           </div>
           <div class="tags">
             <span aria-label="tag" class="tag">#html</span>
@@ -53,7 +54,7 @@
           </button>
           <div>
             <h2>Lorem ipsum dolor sit?</h2>
-            <button aria-label="Show answer of Question" class="button">
+            <button aria-label="Show answer of Question" class="showAnswerBtn">
               Show Answer
             </button>
           </div>
@@ -72,7 +73,7 @@
           </button>
           <div>
             <h2>Lorem ipsum dolor sit?</h2>
-            <button aria-label="Show answer of Question" class="button">
+            <button aria-label="Show answer of Question" class="showAnswerBtn">
               Show Answer
             </button>
           </div>
@@ -91,7 +92,7 @@
           </button>
           <div>
             <h2>Lorem ipsum dolor sit?</h2>
-            <button aria-label="Show answer of Question" class="button">
+            <button aria-label="Show answer of Question" class="showAnswerBtn">
               Show Answer
             </button>
           </div>
