@@ -1,39 +1,40 @@
+.toggleAnswerBtn,
 .showAnswerBtn {
-    background-color: var(--color-green);
-    color: white;
-    margin-top: var(--spacing-large);
-    padding: var(--spacing-medium) var(--spacing-large);
-    border-radius: var(--border-radius-medium);
-    cursor: pointer;
-    font-size: var(--font-size-small);
-    transition: transform 0.3s;
+  background-color: var(--color-green);
+  color: white;
+  margin-top: var(--spacing-large);
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: var(--border-radius-medium);
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  transition: transform 0.3s;
 }
 
 .showAnswerBtn:hover {
-    background-color: var(--color-orange);
-    transform: scale(0.9);
+  background-color: var(--color-orange);
+  transform: scale(0.9);
 }
 
-.hideAnswerBtn{
-    background-color: var(--color-orange);
-    color: white;
-    margin-top: var(--spacing-large);
-    padding: var(--spacing-medium) var(--spacing-large);
-    border-radius: var(--border-radius-medium);
-    cursor: pointer;
-    font-size: var(--font-size-small);
-    transition: transform 0.3s;
+.hideAnswerBtn {
+  background-color: var(--color-orange);
+  color: white;
+  margin-top: var(--spacing-large);
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: var(--border-radius-medium);
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  transition: transform 0.3s;
 }
 
 .hideAnswerBtn:hover {
-    background-color: var(--color-green);
-    transform: scale(0.9);
+  background-color: var(--color-green);
+  transform: scale(0.9);
 }
 
 .hidden {
-    display: none;
-  }
+  display: none;
+}
 
-.answer{
-    font-size: var(--font-size-small);
+.answer {
+  font-size: var(--font-size-small);
 }

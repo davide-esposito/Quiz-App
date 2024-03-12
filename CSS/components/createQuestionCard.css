@@ -18,10 +18,14 @@
 }
 
 .create-question-form textarea {
-  margin-bottom: var(--spacing-large);
   padding: var(--spacing-medium);
   border-radius: var(--border-radius-medium);
   border: 1px solid #ccc;
+}
+
+.create-question-form div {
+  margin-bottom: var(--spacing-medium);
+  margin-top: var(--spacing-small);
 }
 
 .create-question-form .button {

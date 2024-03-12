@@ -22,20 +22,34 @@
     </header>
 
     <main>
-        <section class="create-question-form">
-          <form id="newQuestionForm">
-            <label for="questionInput">Question:</label>
-            <textarea type="text" id="questionInput" name="question" required></textarea>
+      <section class="create-question-form">
+        <form id="newQuestionForm">
+          <label for="questionInput">Question:</label>
+          <textarea
+            type="text"
+            id="questionInput"
+            name="question"
+            maxlength="160"
+            required
+          ></textarea>
+          <div id="questionRemaining">160 characters left</div>
 
-            <label for="answerInput">Answer:</label>
-            <textarea type="text" id="answerInput" name="answer" required></textarea>
+          <label for="answerInput">Answer:</label>
+          <textarea
+            type="text"
+            id="answerInput"
+            name="answer"
+            maxlength="160"
+            required
+          ></textarea>
+          <div id="answerRemaining">160 characters left</div>
 
-            <label for="tagsInput">Tags (separated by commas):</label>
-            <input type="text" id="tagsInput" name="tags" required />
+          <label for="tagsInput">Tags (separated by commas):</label>
+          <input type="text" id="tagsInput" name="tags" required />
 
-            <button type="submit" class="button">Create question</button>
-          </form>
-        </section>
+          <button type="submit" class="button">Create question</button>
+        </form>
+      </section>
 
       <footer>
         <nav class="navbar">
