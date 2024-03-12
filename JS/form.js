@@ -28,5 +28,24 @@ newQuestionForm.addEventListener("submit", (event) => {
   </div>
 </article>`;
 
+  const bookmarkBtn = section.querySelector(".bookmark");
+  bookmarkBtn.addEventListener("click", () => {
+    const icon = bookmarkBtn.querySelector("i");
+    icon.classList.toggle("far");
+    icon.classList.toggle("fas");
+  });
+
+  const showAnswerBtn = section.querySelector(".showAnswerBtn");
+  const questionAnswer = section.querySelector(".answer");
+
+  showAnswerBtn.addEventListener("click", () => {
+    questionAnswer.classList.toggle("hidden");
+    showAnswerBtn.textContent = questionAnswer.classList.contains("hidden")
+      ? "Show Answer"
+      : "Hide Answer";
+  });
+
   document.querySelector("main").appendChild(section);
+
+  const bookmarkBtns = document.querySelectorAll(`.bookmark`);
 });
