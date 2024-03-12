@@ -1,103 +1,103 @@
-
 /* Dark Mode Styles */
 
 /* Dark-Mode */
 [data-theme="dark-theme"] {
-    --background-color: #121212;
-    --text-color: #ffffff;
-    --secondary-background-color: #333333; 
-    --primary-color: #90CAF9;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --secondary-background-color: #333333;
+  --primary-color: #90caf9;
 }
 
 /* Dark-Mode */
 
 [data-theme="dark"] {
-    --background-color: #121212;
-    --text-color: #ffffff;
-    --secondary-background-color: #333333; 
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --secondary-background-color: #333333;
 }
 
 .dark-theme {
-
-    background-color: var(--background-color);
-    color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 /* Header */
-.dark-theme .title{
+.dark-theme .title {
+  background-color: var(--secondary-background-color);
 
-    background-color: var(--secondary-background-color);
-
-    background-color: var(--secondary-background-color)
-
+  background-color: var(--secondary-background-color);
 }
 
-.dark-theme .title h1{
-    color: var(--color-green);
+.dark-theme .title h1 {
+  color: var(--color-green);
 }
 .dark-theme .title h2 {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 /* Profil-Page */
 .dark-theme .profileNameAndImage img {
-    border: 2px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
-.dark-theme .about-me p{
-    color: black;
+.dark-theme .about-me p {
+  color: black;
 }
 
 /* Footer */
 .dark-theme .navbar {
-    background-color: var(--secondary-background-color);
+  background-color: var(--secondary-background-color);
 }
 
 .dark-theme .navbar a {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .dark-theme .navbar a.active {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Question Cards */
 .dark-theme .question-card {
-    background-color: var(--secondary-background-color);
-    color: var(--text-color);
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
+  background-color: var(--secondary-background-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
 }
 
 .dark-theme .question-card h2 {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .dark-theme .tag {
-    border: 2px solid #ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .bookmark {
+  background-color: #333333;
 }
 
 /* Dark Mode Button Styles */
 [data-js="dark-button"] {
-    position: fixed;
-    top: .4125rem;
-    right: .4125rem;
-    padding: .3125rem .625rem;
-    border: none;
-    border-radius: var(--border-radius-large);
-    font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    color: black;
-    background: linear-gradient(145deg, #808080, #ffffff);
-    cursor: pointer;
-    z-index: 1;
+  position: fixed;
+  top: 0.4125rem;
+  right: 0.4125rem;
+  padding: 0.3125rem 0.625rem;
+  border: none;
+  border-radius: var(--border-radius-large);
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: black;
+  background: linear-gradient(145deg, #808080, #ffffff);
+  cursor: pointer;
+  z-index: 1;
 }
 
 [data-js="dark-button"]:hover {
-    background: linear-gradient(145deg, #a0a0a0, #ffffff);
+  background: linear-gradient(145deg, #a0a0a0, #ffffff);
 }
 
 [data-js="dark-button"]:active {
-    background: linear-gradient(145deg, #c0c0c0, #ffffff);
+  background: linear-gradient(145deg, #c0c0c0, #ffffff);
 }
