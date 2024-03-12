@@ -79,7 +79,11 @@ footer > nav > a > i {
 /* Media-Queries */
 
 @media (max-width: 600px) {
-  .button {
+  .showAnswerBtn {
+    margin-bottom: var(--spacing-large);
+  }
+
+  .hideAnswerBtn {
     margin-bottom: var(--spacing-large);
   }
 
@@ -158,7 +162,7 @@ footer > nav > a > i {
     left: var(--spacing-large);
   }
 
-  .button{
+  .showAnswerBtn{
     margin-bottom: var(--spacing-medium);
     margin-top: 0;
   }
